@@ -37,6 +37,7 @@ client.on('ready', async (c) => {
     if (!channel) return;
 
     const row = new ActionRowBuilder();
+
     roles.forEach((role) => {
       row.components.push(
         new ButtonBuilder()
@@ -50,7 +51,6 @@ client.on('ready', async (c) => {
       content: 'Claim or remove a role below.',
       components: [row],
     });
-
     process.exit();
   } catch (error) {
     console.log(error);
