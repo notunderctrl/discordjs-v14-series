@@ -40,7 +40,7 @@ module.exports = async (client, interaction) => {
             content: 'Not enough permissions.',
             ephemeral: true,
           });
-          break;
+          return;
         }
       }
     }
@@ -54,7 +54,7 @@ module.exports = async (client, interaction) => {
             content: "I don't have enough permissions.",
             ephemeral: true,
           });
-          break;
+          return;
         }
       }
     }
