@@ -51,6 +51,6 @@ module.exports = async (client) => {
       }
     }
   } catch (error) {
-    console.log(`TThere was an error: ${error}`);
+    console.log(`There was an error: ${error}`);
   }
 };
