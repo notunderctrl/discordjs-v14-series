@@ -40,6 +40,8 @@ module.exports = {
           );
           return;
         }
+        
+        user.lastDaily = new Date();
       } else {
         user = new User({
           ...query,
